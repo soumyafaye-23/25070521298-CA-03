@@ -74,26 +74,25 @@ export function Navbar() {
                         >
                             Track Order
                         </Link>
+
+                        {/* Login / Profile Page Link */}
+                        <Link
+                            href="/login"
+                            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors text-sm text-gray-300 hover:text-gold border border-white/10"
+                            title={currentUser ? `Signed in as ${currentUser.name}` : 'Sign In / Register'}
+                        >
+                            <User className="w-4 h-4 text-gold" />
+                            <span className="text-xs font-medium max-w-[90px] truncate">
+                                {currentUser ? currentUser.name : 'Login'}
+                            </span>
+                        </Link>
+
                         <Link
                             href="/reservation"
                             className="px-5 py-2 bg-gold text-black font-semibold rounded-full hover:bg-gold-hover transition-colors shadow-lg shadow-gold/10"
                         >
                             Book a Table
                         </Link>
-
-                        {/* User Account / Auth Button */}
-                        <button
-                            onClick={() => setIsAuthOpen(true)}
-                            className="flex items-center gap-1.5 p-2 rounded-full hover:bg-white/10 transition-colors text-sm text-gray-300 hover:text-gold"
-                            title={currentUser ? `Logged in as ${currentUser.name}` : 'Sign In'}
-                        >
-                            <User className="w-5 h-5" />
-                            {currentUser && (
-                                <span className="text-xs font-semibold max-w-[80px] truncate text-gold">
-                                    {currentUser.name}
-                                </span>
-                            )}
-                        </button>
 
                         {/* Cart Button */}
                         <Link href="/cart" className="relative p-2 hover:bg-white/10 rounded-full transition-colors">
@@ -115,12 +114,13 @@ export function Navbar() {
 
                     {/* Mobile Toggle */}
                     <div className="flex md:hidden items-center gap-3">
-                        <button
-                            onClick={() => setIsAuthOpen(true)}
-                            className="p-2 text-foreground"
+                        <Link
+                            href="/login"
+                            className="p-2 text-foreground hover:text-gold transition-colors"
+                            title={currentUser ? `Account: ${currentUser.name}` : 'Login'}
                         >
-                            <User className="w-5 h-5" />
-                        </button>
+                            <User className="w-5 h-5 text-gold" />
+                        </Link>
                         <Link href="/cart" className="relative p-2">
                             <ShoppingBag className="w-5 h-5" />
                             {itemCount > 0 && (
@@ -164,6 +164,14 @@ export function Navbar() {
                                     onClick={() => setIsOpen(false)}
                                 >
                                     Track Order
+                                </Link>
+                                <Link
+                                    href="/login"
+                                    className="text-lg font-medium text-gold hover:underline transition-colors flex items-center gap-2"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    <User className="w-5 h-5" />
+                                    <span>{currentUser ? `Account (${currentUser.name})` : 'Login / Register'}</span>
                                 </Link>
                                 <Link
                                     href="/reservation"
