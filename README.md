@@ -13,21 +13,39 @@
 
 > **Roll No / ID:** 25070521298  
 > **Stack:** React / Next.js, Node.js, Express.js, MongoDB, Mongoose  
-> **Frontend Port:** `http://localhost:3000`  
-> **Backend API Port:** `http://localhost:5000`  
+> **Frontend Port:** [http://localhost:3000](http://localhost:3000)  
+> **Backend API Port:** [http://localhost:5000](http://localhost:5000)  
+> **GitHub Repository:** [https://github.com/soumyafaye-23/25070521298-CA-03](https://github.com/soumyafaye-23/25070521298-CA-03)  
+
+---
+
+## 🌐 Live Service & Preview Links
+
+Both servers run locally with full frontend-backend integration:
+
+| Service | URL | Status | Description |
+|---|---|---|---|
+| **Frontend Application** | [http://localhost:3000](http://localhost:3000) | 🟢 **Live (HTTP 200)** | Next.js luxury restaurant web app |
+| **Backend REST API** | [http://localhost:5000](http://localhost:5000) | 🟢 **Live (Online)** | Express & Node.js API server |
+| **API Health & DB Check** | [http://localhost:5000/api/health](http://localhost:5000/api/health) | 🟢 **Live** | Server uptime and MongoDB status |
+| **API Menu Catalog** | [http://localhost:5000/api/menu](http://localhost:5000/api/menu) | 🟢 **Live** | Full dish catalog with auto-seed |
+| **API Reservations** | [http://localhost:5000/api/reservations](http://localhost:5000/api/reservations) | 🟢 **Live** | Real-time table bookings |
+| **API Orders** | [http://localhost:5000/api/orders](http://localhost:5000/api/orders) | 🟢 **Live** | Placed orders and invoices |
+| **GitHub Repository** | [https://github.com/soumyafaye-23/25070521298-CA-03](https://github.com/soumyafaye-23/25070521298-CA-03) | 🟢 **Public** | Official GitHub repository |
 
 ---
 
 ## 📋 Table of Contents
-1. [Project Overview](#project-overview)
-2. [Architecture](#architecture)
-3. [Folder Structure](#folder-structure)
-4. [Installation & Setup](#installation--setup)
-5. [Environment Variables](#environment-variables)
-6. [Database Configuration](#database-configuration)
-7. [API Endpoints Reference](#api-endpoints-reference)
-8. [Features Implemented](#features-implemented)
-9. [Testing Verification](#testing-verification)
+1. [Live Service & Preview Links](#-live-service--preview-links)
+2. [Project Overview](#1-project-overview)
+3. [Architecture](#2-architecture)
+4. [Folder Structure](#3-folder-structure)
+5. [Installation & Setup](#4-installation--setup)
+6. [Environment Variables](#5-environment-variables)
+7. [Database Configuration](#6-database-configuration)
+8. [API Endpoints Reference](#7-api-endpoints-reference)
+9. [Features Implemented](#8-features-implemented)
+10. [Testing Verification](#9-testing-verification)
 
 ---
 
