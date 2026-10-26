@@ -2,6 +2,7 @@
 ### Full-Stack Continuous Assessment (CA) Submission
 
 <p align="left">
+  <a href="https://25070521298-ca-03.vercel.app/"><img src="https://img.shields.io/badge/Live_Demo-Vercel_Deployment-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo on Vercel" /></a>
   <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
@@ -12,20 +13,22 @@
 </p>
 
 > **Roll No / ID:** 25070521298  
+> **Live Demo (Vercel):** [https://25070521298-ca-03.vercel.app/](https://25070521298-ca-03.vercel.app/)  
 > **Stack:** React / Next.js, Node.js, Express.js, MongoDB, Mongoose  
-> **Frontend Port:** [http://localhost:3000](http://localhost:3000)  
-> **Backend API Port:** [http://localhost:5000](http://localhost:5000)  
+> **Frontend Port (Local):** [http://localhost:3000](http://localhost:3000)  
+> **Backend API Port (Local):** [http://localhost:5000](http://localhost:5000)  
 > **GitHub Repository:** [https://github.com/soumyafaye-23/25070521298-CA-03](https://github.com/soumyafaye-23/25070521298-CA-03)  
 
 ---
 
 ## 🌐 Live Service & Preview Links
 
-Both servers run locally with full frontend-backend integration:
+Both production deployment and local development environments are available:
 
 | Service | URL | Status | Description |
 |---|---|---|---|
-| **Frontend Application** | [http://localhost:3000](http://localhost:3000) | 🟢 **Live (HTTP 200)** | Next.js luxury restaurant web app |
+| **Live Vercel App** | [https://25070521298-ca-03.vercel.app/](https://25070521298-ca-03.vercel.app/) | 🟢 **Live (Production)** | Deployed live application on Vercel |
+| **Frontend Application (Local)** | [http://localhost:3000](http://localhost:3000) | 🟢 **Live (HTTP 200)** | Next.js luxury restaurant web app |
 | **Backend REST API** | [http://localhost:5000](http://localhost:5000) | 🟢 **Live (Online)** | Express & Node.js API server |
 | **API Health & DB Check** | [http://localhost:5000/api/health](http://localhost:5000/api/health) | 🟢 **Live** | Server uptime and MongoDB status |
 | **API Menu Catalog** | [http://localhost:5000/api/menu](http://localhost:5000/api/menu) | 🟢 **Live** | Full dish catalog with auto-seed |
