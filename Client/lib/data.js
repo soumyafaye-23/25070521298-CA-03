@@ -1,14 +1,4 @@
-export type MenuItem = {
-    id: string;
-    name: string;
-    description: string;
-    price: number;
-    category: 'Appetizers' | 'Mains' | 'Desserts' | 'Breads';
-    image: string;
-    featured?: boolean;
-};
-
-export const menuItems: MenuItem[] = [
+export const menuItems = [
     {
         id: '1',
         name: 'Chole Bhature',

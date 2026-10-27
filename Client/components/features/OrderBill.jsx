@@ -1,23 +1,11 @@
 'use client';
-
-import { MenuItem } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import { Printer } from 'lucide-react';
-
-interface OrderBillProps {
-    items: (MenuItem & { quantity: number })[];
-    total: number;
-    orderId: string;
-    date: string;
-}
-
-export function OrderBill({ items, total, orderId, date }: OrderBillProps) {
+export function OrderBill({ items, total, orderId, date }) {
     const tax = total * 0.10;
     const serviceCharge = total * 0.05;
     const grandTotal = total + tax + serviceCharge;
-
-    return (
-        <div className="bg-white text-black p-8 rounded-lg shadow-xl max-w-md mx-auto font-mono text-sm">
+    return (<div className="bg-white text-black p-8 rounded-lg shadow-xl max-w-md mx-auto font-mono text-sm">
             <div className="text-center border-b border-black/10 pb-4 mb-4">
                 <h2 className="text-2xl font-bold font-serif mb-1">LUMIERE</h2>
                 <p className="text-gray-600">Premium Dining Experience</p>
@@ -34,12 +22,10 @@ export function OrderBill({ items, total, orderId, date }: OrderBillProps) {
             </div>
 
             <div className="space-y-3 mb-6">
-                {items.map((item) => (
-                    <div key={item.id} className="flex justify-between">
+                {items.map((item) => (<div key={item.id} className="flex justify-between">
                         <span>{item.quantity}x {item.name}</span>
                         <span>₹{(item.price * item.quantity).toFixed(2)}</span>
-                    </div>
-                ))}
+                    </div>))}
             </div>
 
             <div className="border-t border-black/10 pt-4 space-y-2">
@@ -63,14 +49,9 @@ export function OrderBill({ items, total, orderId, date }: OrderBillProps) {
 
             <div className="mt-8 text-center space-y-4">
                 <p className="italic">Thank you for dining with us!</p>
-                <Button
-                    variant="outline"
-                    className="w-full border-black hover:bg-black hover:text-white transition-colors"
-                    onClick={() => window.print()}
-                >
-                    <Printer className="w-4 h-4 mr-2" /> Print Bill
+                <Button variant="outline" className="w-full border-black hover:bg-black hover:text-white transition-colors" onClick={() => window.print()}>
+                    <Printer className="w-4 h-4 mr-2"/> Print Bill
                 </Button>
             </div>
-        </div>
-    );
+        </div>);
 }
